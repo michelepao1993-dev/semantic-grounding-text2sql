@@ -35,7 +35,7 @@ The framework based on relation-level utility metrics complements standard Text-
 ---
 
 # Repository Structure
-
+```text
 .
 ├── README.md
 ├── LICENSE.txt
@@ -94,7 +94,7 @@ The framework based on relation-level utility metrics complements standard Text-
     ├── experiment_runner.py
     ├── grid_runner.py
     └── turn_runner.py
-
+```
 ---
 
 # Installation
