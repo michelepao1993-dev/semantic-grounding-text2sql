@@ -42,6 +42,10 @@ The framework based on relation-level utility metrics complements standard Text-
 ├── requirements.txt
 ├── .gitignore
 │
+├── Semantics/
+│   ├── N0_First_API.ipynb
+│   └── ...
+│
 ├── agents/
 │   ├── baseline_agent.py
 │   ├── telemetry.py
@@ -236,13 +240,14 @@ The proposed metrics aim to better capture:
 
 # Notebooks
 
-The repository includes a notebook for reproducibility and analysis.
+The repository includes:
+
+# Semantics
+This folder contains notebooks based on other materials published as part of LangChain Academy courses—designed to foster a better understanding of LangGraph, the Python library upon which this repository is built.
 
 
 # Experiments.ipynb
-
-
-Reproduces the main quantitative tables reported in the paper.
+It's a notebook for reproducibility and analysis. It reproduces the main quantitative tables reported in the paper.
 
 Includes:
 
