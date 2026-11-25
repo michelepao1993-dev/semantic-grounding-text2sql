@@ -139,7 +139,7 @@ Windows:
 
 ```bash
 
-.venv\Scripts\activate
+.\.venv\Scripts\Activate.ps1
 
 ```
 
@@ -180,10 +180,10 @@ Expected structure:
 ```text
 
 data/spider/
-
-├── database
+├── database/
 ├── train_spider.json
 ├── dev.json
+├── tables.json
 └── ...
 
 ```
@@ -374,9 +374,7 @@ This repository is provided for research and reproducibility purposes. The imple
 
 
 
-```
 
-```
 
 
 
