@@ -108,7 +108,7 @@ The framework based on relation-level utility metrics complements standard Text-
 
 ```bash
 
-git clone <PUBLIC_GITHUB_REPOSITORY_URL>
+git clone https://github.com/michelepao1993-dev/semantic-grounding-text2sql.git
 
 cd <repository_name>
 
@@ -182,27 +182,23 @@ data/spider/
 
 ---
 
-# Running Experiments
 
+# Educational Resources: From LLMs to Conversational Text-to-SQL Agents
 
-# Example: Spider Evaluation
+The `Semantics/` directory provides a hands-on introduction to LLM-based conversational agents, building upon educational materials from LangChain Academy.
 
+The notebooks progressively introduce:
 
-```bash
+- LLM APIs and message-based interaction.
+- Graph-based orchestration with LangGraph.
+- Tool calling and the ReAct paradigm.
+- Conversational memory and state management.
+- Safe SQL execution and database interaction.
+- The implementation of a fully functional conversational Text-to-SQL agent.
 
-python scripts/run_spider_eval.py
+The final notebook, `N6_Conversational_Text_to_SQL_Agent.ipynb`, integrates these concepts into a practical application using the Spider benchmark.
 
-```
-
-
-Additional configuration files may be placed under:
-
-
-```text
-
-configs/
-
-```
+These educational resources complement the research framework by providing an accessible entry point for students, researchers, and developers interested in LLM-based agents, semantic grounding, and Text-to-SQL systems.
 
 
 ---
@@ -213,14 +209,14 @@ configs/
 The framework supports both standard and relation-level metrics.
 
 
-# Standard Metrics
+## Standard Metrics
 
 - Execution Accuracy (EX)
 - Exact Match (EM)
 - Component Matching (CM)
 
 
-# Relation-Level Metrics
+## Relation-Level Metrics
 
 - Relational Accuracy
 - Informational Relational Accuracy (beta=0)
@@ -242,11 +238,11 @@ The proposed metrics aim to better capture:
 
 The repository includes:
 
-# Semantics
+## Semantics
 This folder contains notebooks based on other materials published as part of LangChain Academy courses—designed to foster a better understanding of LangGraph, the Python library upon which this repository is built.
 
 
-# Experiments.ipynb
+## Experiments.ipynb
 It's a notebook for reproducibility and analysis. It reproduces the main quantitative tables reported in the paper.
 
 Includes:
@@ -289,7 +285,7 @@ The logs are sufficient to reproduce:
 
 - All notebooks were executed from a clean environment before release.
 - Outputs and figures included in the paper can be reproduced from the provided logs.
-- The repository avoids live API calls inside notebooks for reproducibility purposes.
+- The experimental analysis notebook reproduces the reported results from precomputed logs without requiring live API calls. The educational notebooks in `Semantics/` require an API key for hands-on experimentation.
 
 
 ---
@@ -315,8 +311,6 @@ If you use this repository, please cite:
 
 ```bibtex
 
-If you use this repository, please cite:
-
 @inproceedings{paolicelli2026semantic,
     title={Semantic Grounding over Brute-Force Inference: A Symbiotic Evaluation of Text-to-SQL Systems},
     author={Michele Paolicelli, Cataldo Musto, Giovanni Semeraro, Alessandro Crnjar, David Landi and Claudio Saccà},
@@ -338,7 +332,7 @@ See:
 
 ```text
 
-LICENSE
+LICENSE.text
 
 ```
 
