@@ -3,7 +3,9 @@
 This repository contains the implementation, evaluation framework, experimental artifacts, and analysis notebooks associated with the paper:
 "Semantic Grounding over Brute-Force Inference: A Symbiotic Evaluation of Text-to-SQL Systems"
 
+
 ---
+
 
 # Overview
 
@@ -32,7 +34,9 @@ The proposed framework introduces a cost-aware Symbiotic Evaluation Framework th
 
 The framework based on relation-level utility metrics complements standard Text-to-SQL evaluation protocols such as Execution Accuracy.
 
+
 ---
+
 
 # Repository Structure
 ```text
@@ -99,7 +103,10 @@ The framework based on relation-level utility metrics complements standard Text-
     ├── grid_runner.py
     └── turn_runner.py
 ```
+
+
 ---
+
 
 # Installation
 
@@ -110,7 +117,7 @@ The framework based on relation-level utility metrics complements standard Text-
 
 git clone https://github.com/michelepao1993-dev/semantic-grounding-text2sql.git
 
-cd <repository_name>
+cd semantic-grounding-text2sql
 
 ```
 
@@ -146,7 +153,9 @@ pip install -r requirements.txt
 
 ```
 
+
 ---
+
 
 # Dataset Setup
 
@@ -256,6 +265,22 @@ Includes:
 - other setups.
 
 
+## Running Experiments
+
+The experimental framework can be accessed through `notebooks/Experiments.ipynb`.
+
+The notebook supports two workflows:
+
+- **Offline evaluation:** reproduce the reported metrics and quantitative comparisons using the provided experimental logs, without making live API calls.
+- **Live experimentation:** configure and launch new experiments using `ExperimentSpec` and `GridRunner`. This requires the Spider dataset and a valid OpenAI API key.
+
+By default, the cells responsible for launching live experiments are commented out to prevent unintended API costs. To run new experiments, uncomment the desired experimental configurations and the corresponding execution cell.
+
+When launching new experiments, use a separate output directory to preserve the original experimental artifacts.
+
+
+---
+
 
 # Logs and Reproducibility
 
@@ -313,7 +338,7 @@ If you use this repository, please cite:
 
 @inproceedings{paolicelli2026semantic,
     title={Semantic Grounding over Brute-Force Inference: A Symbiotic Evaluation of Text-to-SQL Systems},
-    author={Michele Paolicelli, Cataldo Musto, Giovanni Semeraro, Alessandro Crnjar, David Landi and Claudio Saccà},
+    author={Michele Paolicelli and Cataldo Musto and Giovanni Semeraro and Alessandro Crnjar and David Landi and Claudio Saccà},
     booktitle={Proceedings of AIxIA 2026},
     year={2026}
 }
@@ -332,7 +357,7 @@ See:
 
 ```text
 
-LICENSE.text
+LICENSE.txt
 
 ```
 
