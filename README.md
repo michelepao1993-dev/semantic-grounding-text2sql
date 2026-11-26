@@ -154,6 +154,35 @@ pip install -r requirements.txt
 ```
 
 
+4. Create a .env file
+
+
+```bash
+
+touch .env
+
+```
+
+
+Windows:
+
+
+```bash
+
+New-Item -Path .env -ItemType File
+
+```
+
+
+5. Open the .env file with a text editor and insert the necessary keys
+
+
+OpenAI key:
+
+\# --- OpenAI ---
+OPENAI_API_KEY=***
+
+
 ---
 
 
