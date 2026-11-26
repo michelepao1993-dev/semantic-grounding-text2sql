@@ -180,7 +180,8 @@ New-Item -Path .env -ItemType File
 OpenAI key:
 
 \# --- OpenAI ---
-\\OPENAI_API_KEY=***
+
+OPENAI_API_KEY=***
 
 
 ---
