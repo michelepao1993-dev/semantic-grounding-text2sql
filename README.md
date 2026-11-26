@@ -562,6 +562,22 @@ The same agent architecture can operate with different language models, allowing
 
 **Building effective conversational agents does not necessarily require expensive computational resources. Thoughtful engineering, semantic grounding, and efficient resource management are equally fundamental.**
 
+## Automatic GPU Acceleration
+
+Ollama automatically detects and uses compatible GPUs when available. No additional Python code or CUDA configuration is required within the educational notebooks.
+
+If GPU memory is insufficient, Ollama may distribute the model across the GPU and CPU.
+
+Students can verify hardware utilization by running:
+
+```bash
+ollama ps
+```
+
+GPU acceleration can significantly reduce inference latency and enable experimentation with larger language models.
+
+For further information, consult the [official Ollama hardware support documentation](https://docs.ollama.com/gpu).
+
 
 
 
